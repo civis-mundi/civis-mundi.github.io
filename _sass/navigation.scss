@@ -1,0 +1,43 @@
+// https://developer.mozilla.org/en-US/docs/Web/HTML/Element/nav
+// https://www.w3schools.com/css/css_navbar.asp
+
+nav {
+
+}
+
+/* ul */
+.nav_list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #222;
+  /* stay at top during scroll */
+  //position: fixed;
+  //top: 0;
+  //width: 100%;
+}
+
+/* li */
+.nav_item {
+  display: inline;
+  float: left;
+}
+
+.nav_item a {
+  display: block;
+  color: #aaa;
+  text-align: center;
+  padding: 10px 12px;
+  text-decoration: none;
+}
+
+.nav_item a:hover {
+  background-color: #111;
+  text-decoration: none;
+}
+
+@media screen and (max-width: 600px) {
+  ul.nav_list li.right,
+  ul.nav_list li {float: none;}
+}

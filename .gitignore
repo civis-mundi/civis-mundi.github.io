@@ -1,0 +1,16 @@
+*.gem
+.bundle
+_site
+.sass-cache
+.jekyll-cache
+.jekyll-metadata
+vendor
+Gemfile.lock
+**/.ruby-version
+
+# IntelliJ Idea
+.idea/
+*.iml
+
+# macOS
+.DS_Store
