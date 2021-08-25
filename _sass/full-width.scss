@@ -1,15 +1,38 @@
+@import './styles';
 /*******************************************************************************
 Full-Width Styles
 *******************************************************************************/
 
+.background_wrapper {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+}
+
+.background_wrapper::after {
+  position: absolute;
+  content: '';
+  left: 50%;
+  height: 100vh;
+  width: 61rem;
+  background-color: #00000013;
+  transform: skew(30deg, 0) translateX(-85%);
+  z-index: -1;
+}
+
 .outer {
+  position: relative;
+  z-index: 1;
   width: 100%;
 }
 
 .inner {
   position: relative;
-  max-width: 700px;
-  padding: 20px 10px;
+  max-width: 50%;
+  padding: 1.5rem 0.6rem;
   margin: 0 auto;
 }
 
@@ -29,34 +52,34 @@ Full-Width Styles
 }
 
 #header_wrap {
-  background: #173A37;
-  background: -moz-linear-gradient(top, #58807C, #173A37);
-  background: -webkit-linear-gradient(top, #58807C, #173A37);
-  background: -ms-linear-gradient(top, #58807C, #173A37);
-  background: -o-linear-gradient(top, #58807C, #173A37);
-  background: linear-gradient(to top, #58807C, #173A37);
+  //background: #173A37;
+  //background: -moz-linear-gradient(top, #58807C, #173A37);
+  //background: -webkit-linear-gradient(top, #58807C, #173A37);
+  //background: -ms-linear-gradient(top, #58807C, #173A37);
+  //background: -o-linear-gradient(top, #58807C, #173A37);
+  //background: linear-gradient(to top, #58807C, #173A37);
 }
 
 #header_wrap .inner {
-  align-content: center;
-  padding: 50px 10px 30px 10px;
-  text-align: center;
+  margin-top: 20rem;
+  padding: 3rem 0.6rem 1.9rem 0.6rem;
 }
 
 #project_title {
   margin: 0;
   color: #FFFFFF;
-  font-size: 62px;
+  font-size: 4rem;
   font-weight: 700;
   text-shadow: #111 0px 0px 10px;
 }
 
 #project_tagline {
-  color: #D1E1DF;
-  font-size: 24px;
+  font-size: 2rem;
   font-weight: 300;
   background: none;
-  text-shadow: #111 0px 0px 10px;
+  text-shadow: #111 0 0 0.6rem;
+  max-width: 35rem;
+  line-height: 1.4;
 }
 
 #downloads {
@@ -99,15 +122,43 @@ Full-Width Styles
 }
 
 #main_content_wrap {
-  background: #58807C;
-  //border-top: 1px solid #111;
-  //border-bottom: 1px solid #111;
 }
 
 #main_content {
-  padding-top: 40px;
+  display: flex;
+  flex-direction: column;
+  padding-top: 2.5rem;
+  margin-top: 5rem;
+}
+
+.content-item-label {
+  position: relative;
+  top: 1.5rem;
+  right: 2rem;
+  z-index: 2;
+}
+
+.content-item-label h2 {
+  padding-bottom: 0;
+  font-size: 3rem;
+}
+
+.content-item-container {
+  position: relative;
+  background-color: $body_background_color;
+  border-radius: 0.25rem;
+  box-shadow: 0 2px 30px $shadow_color;
+  display: block;
+  padding: 1.75rem;
+  margin-bottom: 10rem;
+  max-width: 50%;
+  position: relative;
+  z-index: 1;
+  font-size: 2rem;
 }
 
 #footer_wrap {
-  background: #173A37;
+  position: relative;
+  z-index: 2;
+  background: $body_background_color;
 }

@@ -11,7 +11,8 @@ nav {
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: #173A37;
+  position: relative;
+  z-index: 1;
   /* stay at top during scroll */
   //position: fixed;
   //top: 0;
