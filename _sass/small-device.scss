@@ -2,13 +2,80 @@
 Small Device Styles
 *******************************************************************************/
 
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 2000px) {
+  .inner {
+    max-width: 65%;
+  }
+
+  #project_title {
+    font-size: 3rem;
+  }
+
+  #project_tagline {
+    font-size: 1.5rem;
+  }
+
+  #header_wrap .inner {
+    margin-top: 10rem;
+  }
+
+  .content-item-container {
+    font-size: 1.5rem;
+    margin-bottom: 5rem;
+  }
+
+  .content-item-label {
+    font-size: 2rem;
+  }
+}
+
+@media screen and (max-width: 1800px) {
+  .background_wrapper::after {
+    transform: skew(30deg, 0) translateX(-75%);
+  }
+}
+
+@media screen and (max-width: 1600px) {
+  .background_wrapper::after {
+    transform: skew(30deg, 0) translateX(-85%);
+    width: 51rem;
+  }
+
+  .inner {
+    max-width: 80%;
+  }
+}
+
+@media screen and (max-width: 1400px) {
+  .inner {
+    max-width: 90%;
+  }
+}
+
+@media screen and (max-width: 960px) {
   img {
     max-width: 100%;
   }
 
-  .background_wrapper::after {
-    transform: skew(30deg, 0) translateX(-55%);
+  #main_content {
+    margin-top: 1rem;
+  }
+
+  .background_wrapper {
+    display: none;
+  }
+
+  #header_wrap .inner {
+    margin-top: 2.5rem;
+  }
+
+  .content-item-container {
+    max-width: 70%;
+  }
+
+  .content-item-label {
+    top: 0;
+    right: 0;
   }
 }
 
