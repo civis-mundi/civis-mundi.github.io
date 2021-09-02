@@ -168,6 +168,19 @@ Full-Width Styles
   font-size: 1.75rem;
 }
 
+.content-item-container-lesser {
+  position: relative;
+  background-color: $body_background_color;
+  border-radius: 0.25rem;
+  box-shadow: 0 2px 30px $shadow_color;
+  display: block;
+  padding: 1.75rem;
+  margin-bottom: 4rem;
+  max-width: 70%;
+  position: relative;
+  z-index: 1;
+}
+
 .content-story-section {
   font-size: 1.20rem;
 }
