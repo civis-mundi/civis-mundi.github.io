@@ -1,4 +1,5 @@
 @import './styles';
+
 /*******************************************************************************
 Full-Width Styles
 *******************************************************************************/
@@ -40,14 +41,14 @@ Full-Width Styles
 #forkme_banner {
   display: block;
   position: absolute;
-  top:0;
+  top: 0;
   right: 10px;
   z-index: 10;
   padding: 10px 50px 10px 10px;
   color: #fff;
   background: url('../images/blacktocat.png') #0090ff no-repeat 95% 50%;
   font-weight: 700;
-  box-shadow: 0 0 10px rgba(0,0,0,.5);
+  box-shadow: 0 0 10px rgba(0, 0, 0, .5);
   border-bottom-left-radius: 2px;
   border-bottom-right-radius: 2px;
 }
@@ -100,7 +101,7 @@ Full-Width Styles
   display: block;
   float: right;
   width: 90px;
-  height:70px;
+  height: 70px;
   text-indent: -5000px;
   overflow: hidden;
   background: url(../images/sprite_download.png) no-repeat bottom left;
@@ -110,7 +111,7 @@ Full-Width Styles
   display: block;
   float: right;
   width: 90px;
-  height:70px;
+  height: 70px;
   text-indent: -5000px;
   overflow: hidden;
   background: url(../images/sprite_download.png) no-repeat bottom right;
@@ -125,7 +126,13 @@ Full-Width Styles
   background: url(../images/sprite_download.png) no-repeat top right;
 }
 
+#page-container {
+  position: relative;
+  min-height: 100vh;
+}
+
 #main_content_wrap {
+  padding-bottom: 12rem; /* Footer height */
 }
 
 #main_content {
@@ -172,20 +179,23 @@ Full-Width Styles
   font-size: 0.75rem;
 }
 
-  .img-portrait {
-    float: left;
-    margin-right: 10px;
-    margin-bottom: 10px;
-    -webkit-transform: scale(0.25); /* Saf3.1+, Chrome */
-    -moz-transform: scale(0.25); /* FF3.5+ */
-    -ms-transform: scale(0.25); /* IE9 */
-    -o-transform: scale(0.25); /* Opera 10.5+ */
-    transform: scale(0.25);
-  }
+.img-portrait {
+  float: left;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  -webkit-transform: scale(0.25); /* Saf3.1+, Chrome */
+  -moz-transform: scale(0.25); /* FF3.5+ */
+  -ms-transform: scale(0.25); /* IE9 */
+  -o-transform: scale(0.25); /* Opera 10.5+ */
+  transform: scale(0.25);
+}
 
 
 #footer_wrap {
-  position: relative;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 12rem; /* Footer height */
   z-index: 2;
   background: $body_background_color;
 }
