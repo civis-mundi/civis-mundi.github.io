@@ -4,8 +4,8 @@
 /* *https://www.w3.org/Style/Examples/007/fonts.en.html */
 body {
   box-sizing: border-box;
-  color: $font_color;
-  background: $body_background_color;
+  color: $colorPrimary2a;
+  background: $colorPrimary6;
   font-size: 1rem;
   font-family: 'Myriad Pro', Calibri, Helvetica, Arial, sans-serif;
   line-height: 1.5;
@@ -23,6 +23,7 @@ h1, h2, h3, h4, h5, h6 {
 h1 {
   font-size: 30px;
   font-weight: 700;
+  color: $colorSecondary12sa;
 }
 
 h2 {

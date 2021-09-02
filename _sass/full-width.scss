@@ -156,7 +156,7 @@ Full-Width Styles
 
 .content-item-container {
   position: relative;
-  background-color: $body_background_color;
+  background-color: $colorPrimary6;
   border-radius: 0.25rem;
   box-shadow: 0 2px 30px $shadow_color;
   display: block;
@@ -170,7 +170,7 @@ Full-Width Styles
 
 .content-item-container-lesser {
   position: relative;
-  background-color: $body_background_color;
+  background-color: $colorPrimary6;
   border-radius: 0.25rem;
   box-shadow: 0 2px 30px $shadow_color;
   display: block;
@@ -185,7 +185,7 @@ Full-Width Styles
 .demo-button {
   position: relative;
   color: #254E1F;
-  background-color: $highlight_color;
+  background-color: $colorSecondary22;
   border-radius: 2rem;
   box-shadow: 0 2px 30px $shadow_color;
   display: block;
@@ -202,7 +202,7 @@ Full-Width Styles
 }
 
 .demo-button h1 {
-  color: $body_background_color-accent-darkest;
+  color: $colorSecondary15a;
   font-size: 35px;
   font-weight: 900;
 }
