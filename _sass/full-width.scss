@@ -171,6 +171,18 @@ Full-Width Styles
   font-size: 0.75rem;
 }
 
+  .img-portrait {
+    float: left;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    -webkit-transform: scale(0.25); /* Saf3.1+, Chrome */
+    -moz-transform: scale(0.25); /* FF3.5+ */
+    -ms-transform: scale(0.25); /* IE9 */
+    -o-transform: scale(0.25); /* Opera 10.5+ */
+    transform: scale(0.25);
+  }
+
+
 #footer_wrap {
   position: relative;
   z-index: 2;
