@@ -124,14 +124,14 @@ pre, code {
 
 pre {
   padding: 10px;
-  box-shadow: 0 0 10px rgba(0,0,0,.1);
+  box-shadow: 0 0 10px rgba(0, 0, 0, .1);
   overflow: auto;
 }
 
 code {
   padding: 3px;
   margin: 0 3px;
-  box-shadow: 0 0 10px rgba(0,0,0,.1);
+  box-shadow: 0 0 10px rgba(0, 0, 0, .1);
 }
 
 pre code {
@@ -209,6 +209,11 @@ dl p {
 
 .content-story-section {
   font-size: 1.1rem;
+}
+
+.content-story-section-header {
+  font-size: 2rem;
+  margin-top: 1rem;
 }
 
 .content-panel {
