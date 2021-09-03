@@ -181,6 +181,7 @@ blockquote {
 .content-story-section-header {
   font-size: 2rem;
   margin-top: 1rem;
+  color: $colorSecondary12sa;
 }
 
 .content-panel {
@@ -188,4 +189,10 @@ blockquote {
   font-family: 'Oswald', sans-serif;
   line-height: 1.65;
   letter-spacing: 0.04em;
+}
+
+.blog-item-header {
+  //font-size: 2rem;
+  margin-top: 4rem;
+  //color: $colorSecondary12sa;
 }

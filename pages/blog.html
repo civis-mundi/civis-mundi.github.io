@@ -13,10 +13,10 @@ title: Blog
     <img class="logo" src="../assets/images/noun-project/Noun_project_1026_flipped_bluegreen-02s.png">
 </div>
 
-<ul>
+<ul class="blog-list">
     {% for post in site.posts %}
     <li>
-        <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
+        <h2 class="blog-item-header"><a href="{{ post.url }}">{{ post.title }}</a></h2>
         {{ post.excerpt }}
     </li>
     {% endfor %}
