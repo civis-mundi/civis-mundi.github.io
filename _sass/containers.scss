@@ -1,7 +1,7 @@
 @import './color';
 
 .background_wrapper {
-  background: linear-gradient(#294845, #1C293F);
+  background: linear-gradient($colorPrimaryBackground1, $colorSecondaryBackground1);
   position: fixed;
   top: 0;
   bottom: 0;
