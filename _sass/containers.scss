@@ -75,6 +75,8 @@
 }
 
 #main_content_wrap {
+  // This padding-bottom must match the footer height.
+  // This is part of the trick that sticks the footer to the bottom.
   padding-bottom: 12rem; /* Footer height */
 }
 
@@ -97,7 +99,11 @@
   font-size: 2rem;
 }
 
-.content-item-container {
+/*
+ * A raised box panel used to emphasize a small amount of text,
+ * such as a call-to-action or a quote.
+ */
+.content-box {
   position: relative;
   background-color: $colorPrimaryBoxBackground1;
   border-radius: 0.25rem;
@@ -111,7 +117,11 @@
   font-size: 1.55rem;
 }
 
-.content-item-container-lesser {
+/*
+ * A raised box panel used to emphasize a small amount of text,
+ * such as a call-to-action or a quote.
+ */
+.content-box-lesser {
   position: relative;
   background-color: $colorPrimaryBoxBackground1;
   border-radius: 0.25rem;
@@ -127,13 +137,6 @@
 
 .content-story-section {
   font-size: 1.20rem;
-}
-
-.content-illustration {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  font-size: 0.75rem;
 }
 
 #footer_wrap {
