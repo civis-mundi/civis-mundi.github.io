@@ -177,3 +177,21 @@ dl p {
   padding-left: 20px;
   font-style: italic;
 }
+
+#project_title {
+  margin: 0;
+  color: #FFFFFF;
+  font-size: 4rem;
+  font-weight: 800;
+  text-shadow: #1C293F 0px 0px 10px;
+}
+
+#project_tagline {
+  color: #B1D6AB;
+  font-size: 1.25rem;
+  font-weight: 300;
+  background: none;
+  text-shadow: #1C293F 0 0 0.6rem;
+  max-width: 35rem;
+  line-height: 1.4;
+}
