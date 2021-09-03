@@ -28,13 +28,13 @@ nav {
 
 .nav_item a {
   display: block;
-  color: #84A5A1;
+  color: $colorPrimary2;
   text-align: center;
   padding: 10px 12px;
   text-decoration: none;
 }
 
 .nav_item a:hover {
-  background-color: #294845;
+  background-color: $colorPrimaryBackground1;
   text-decoration: none;
 }
