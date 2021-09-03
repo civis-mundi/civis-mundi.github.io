@@ -1,6 +1,8 @@
 /*
  * Container elements for small devices.
  */
+@import './color';
+
 @media screen and (max-width: 960px) {
   img {
     max-width: 100%;

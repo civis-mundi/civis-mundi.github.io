@@ -1,6 +1,8 @@
 /*
  * Container elements for small devices.
  */
+@import './color';
+
 @media screen and (max-width: 1600px) {
   .background_wrapper::after {
     transform: skew(30deg, 0) translateX(-85%);
