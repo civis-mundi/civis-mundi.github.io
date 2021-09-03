@@ -1,5 +1,8 @@
 @import './color';
 
+/*
+ * Applied to a div where class is background-wrapper.
+ */
 .background_wrapper {
   background: linear-gradient($colorPrimaryBackground1, $colorSecondaryBackground1);
   position: fixed;
@@ -10,6 +13,9 @@
   z-index: 1;
 }
 
+/*
+ * Applied to a div where class is background-wrapper.
+ */
 .background_wrapper::after {
   position: absolute;
   content: '';
@@ -17,16 +23,24 @@
   height: 100vh;
   width: 61rem;
   background-color: #00000013;
+  // Skew the div, making a sash shape.
   transform: skew(30deg, 0) translateX(-85%);
+  // Send the div into the background.
   z-index: -1;
 }
 
+/*
+ * A class applied to header_wrap, footer_wrap, and main_content_wrap.
+ */
 .outer {
   position: relative;
   z-index: 1;
   width: 100%;
 }
 
+/*
+ * A class applied to header, footer, and section.
+ */
 .inner {
   position: relative;
   max-width: 50%;
@@ -50,6 +64,11 @@
   float: left;
 }
 
+/*
+ * This used to wrap all page content except the footer,
+ * so that the footer can be shoved all the way to the bottom
+ * of each page and will always stick there.
+ */
 #page-container {
   position: relative;
   min-height: 100vh;
