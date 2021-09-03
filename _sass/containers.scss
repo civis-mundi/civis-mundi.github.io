@@ -129,3 +129,10 @@
   // Send the div into the background.
   z-index: -1;
 }
+
+/*
+ * Use on a div to enforce minimum space when nothing else helps.
+ */
+.empty-space {
+  margin-top: 4rem;
+}
