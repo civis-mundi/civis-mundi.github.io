@@ -71,7 +71,7 @@
  * A raised box panel used to emphasize a small amount of text,
  * such as a call-to-action or a quote.
  */
-.content-box {
+.content-panel {
   position: relative;
   background-color: $colorPrimaryBoxBackground1;
   border-radius: 0.25rem;
@@ -89,7 +89,7 @@
  * A raised box panel used to emphasize a small amount of text,
  * such as a call-to-action or a quote.
  */
-.content-box-lesser {
+.content-panel-lesser {
   position: relative;
   background-color: $colorPrimaryBoxBackground1;
   border-radius: 0.25rem;
