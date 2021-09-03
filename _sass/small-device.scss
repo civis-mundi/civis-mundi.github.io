@@ -78,34 +78,3 @@ Small Device Styles
     right: 0;
   }
 }
-
-@media screen and (max-width: 500px) {
-
-  #downloads {
-    display: none;
-  }
-
-  #project_title {
-    font-size: 32px;
-  }
-
-  .background_wrapper::after {
-    width: 30rem;
-  }
-}
-
-@media screen and (max-width: 320px) {
-
-  #downloads {
-    display: none;
-  }
-
-  .inner {
-    min-width: 240px;
-    max-width: 320px;
-  }
-
-  #project_title {
-    font-size: 28px;
-  }
-}

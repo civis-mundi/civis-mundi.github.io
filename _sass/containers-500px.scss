@@ -1,0 +1,13 @@
+/*
+ * Container elements for small devices.
+ */
+@media screen and (max-width: 500px) {
+
+  #downloads {
+    display: none;
+  }
+
+  .background_wrapper::after {
+    width: 30rem;
+  }
+}
