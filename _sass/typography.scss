@@ -15,7 +15,7 @@ body {
 h1, h2, h3, h4, h5, h6 {
   margin: 10px 0;
   font-weight: 700;
-  color:#D1E1DF;
+  color: $colorPrimary2a;
   font-family: 'Lucida Grande', 'Calibri', Helvetica, Arial, sans-serif;
   letter-spacing: -1px;
 }
@@ -74,12 +74,12 @@ div {
 }
 
 footer p {
-  color: #D1E1DF;
+  color: $colorPrimary2a;
 }
 
 a {
   text-decoration: none;
-  color: #B1D6AB;
+  color: $colorSecondary22;
   text-shadow: none;
 
   transition: color 0.5s ease;
@@ -183,15 +183,15 @@ dl p {
   color: #FFFFFF;
   font-size: 4rem;
   font-weight: 800;
-  text-shadow: #1C293F 0px 0px 10px;
+  text-shadow: $colorSecondaryBackground1 0px 0px 10px;
 }
 
 #project_tagline {
-  color: #B1D6AB;
+  color: $colorSecondary22;
   font-size: 1.25rem;
   font-weight: 300;
   background: none;
-  text-shadow: #1C293F 0 0 0.6rem;
+  text-shadow: $colorSecondaryBackground1 0 0 0.6rem;
   max-width: 35rem;
   line-height: 1.4;
 }
