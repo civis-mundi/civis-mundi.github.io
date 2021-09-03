@@ -1,0 +1,29 @@
+/*
+ * Container elements for small devices.
+ */
+@media screen and (max-width: 960px) {
+  img {
+    max-width: 100%;
+  }
+
+  #main_content {
+    margin-top: 1rem;
+  }
+
+  .background_wrapper {
+    display: none;
+  }
+
+  #header_wrap .inner {
+    margin-top: 2.5rem;
+  }
+
+  .content-item-container {
+    max-width: 70%;
+  }
+
+  .content-item-label {
+    top: 0;
+    right: 0;
+  }
+}
