@@ -195,3 +195,19 @@ dl p {
   max-width: 35rem;
   line-height: 1.4;
 }
+
+.content-item-label {
+  position: relative;
+  top: 1.5rem;
+  right: 2rem;
+  z-index: 2;
+}
+
+.content-item-label h2 {
+  padding-bottom: 0;
+  font-size: 2rem;
+}
+
+.content-story-section {
+  font-size: 1.20rem;
+}

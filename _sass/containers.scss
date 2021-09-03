@@ -1,35 +1,6 @@
 @import './color';
 
 /*
- * Applied to a div where class is background-wrapper.
- */
-.background_wrapper {
-  background: linear-gradient($colorPrimaryBackground1, $colorSecondaryBackground1);
-  position: fixed;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  z-index: 1;
-}
-
-/*
- * Applied to a div where class is background-wrapper.
- */
-.background_wrapper::after {
-  position: absolute;
-  content: '';
-  left: 50%;
-  height: 100vh;
-  width: 61rem;
-  background-color: #00000013;
-  // Skew the div, making a sash shape.
-  transform: skew(30deg, 0) translateX(-85%);
-  // Send the div into the background.
-  z-index: -1;
-}
-
-/*
  * A class applied to header_wrap, footer_wrap, and main_content_wrap.
  */
 .outer {
@@ -87,16 +58,13 @@
   margin-top: 2.5rem;
 }
 
-.content-item-label {
-  position: relative;
-  top: 1.5rem;
-  right: 2rem;
+#footer_wrap {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 12rem; /* Footer height */
   z-index: 2;
-}
-
-.content-item-label h2 {
-  padding-bottom: 0;
-  font-size: 2rem;
+  background: $colorSecondaryFooterBackground1;
 }
 
 /*
@@ -135,15 +103,31 @@
   z-index: 1;
 }
 
-.content-story-section {
-  font-size: 1.20rem;
+/*
+ * Applied to a div where class is background-wrapper.
+ */
+.background_wrapper {
+  background: linear-gradient($colorPrimaryBackground1, $colorSecondaryBackground1);
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
 }
 
-#footer_wrap {
+/*
+ * Applied to a div where class is background-wrapper.
+ */
+.background_wrapper::after {
   position: absolute;
-  bottom: 0;
-  width: 100%;
-  height: 12rem; /* Footer height */
-  z-index: 2;
-  background: $colorSecondaryFooterBackground1;
+  content: '';
+  left: 50%;
+  height: 100vh;
+  width: 61rem;
+  background-color: #00000013;
+  // Skew the div, making a sash shape.
+  transform: skew(30deg, 0) translateX(-85%);
+  // Send the div into the background.
+  z-index: -1;
 }
