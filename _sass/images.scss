@@ -39,6 +39,7 @@ img.logo {
   //-ms-transform: scale(0.25); /* IE9 */
   //-o-transform: scale(0.25); /* Opera 10.5+ */
   //transform: scale(0.25);
+  z-index: -1;
 }
 
 .img-portrait {

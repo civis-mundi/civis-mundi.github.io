@@ -11,22 +11,23 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  margin: 10px 0;
+  margin: 1rem 0 0.5rem 0;
   font-weight: 700;
   color: $colorPrimary2a;
-  font-family: 'Montserrat', sans-serif;
-  letter-spacing: 0.04em;
+  //font-family: 'Montserrat', sans-serif;
+  font-family: 'Teko', sans-serif;
+  letter-spacing: 0.05em;
 }
 
 h1 {
-  font-size: 30px;
+  font-size: 38px;
   font-weight: 700;
   color: $colorSecondary12sa;
 }
 
 h2 {
-  padding-bottom: 10px;
-  font-size: 26px;
+  //padding-bottom: 10px;
+  font-size: 30px;
 }
 
 h3 {
@@ -145,21 +146,23 @@ blockquote {
 }
 
 #project_title {
-  margin: 0;
+  margin: 2rem 0rem 0rem 0rem;
   color: #FFFFFF;
-  font-size: 4rem;
+  font-size: 4.4rem;
   font-weight: 800;
   text-shadow: $colorSecondaryBackground1 0px 0px 10px;
+  line-height: 1;
 }
 
 #project_tagline {
   color: $colorSecondary22;
-  font-size: 1.25rem;
+  font-size: 1.5rem;
   font-weight: 300;
   background: none;
   text-shadow: $colorSecondaryBackground1 0 0 0.6rem;
-  max-width: 35rem;
-  line-height: 1.4;
+  //max-width: 35rem;
+  line-height: 1;
+  margin: 0;
 }
 
 .content-item-label {
@@ -179,16 +182,18 @@ blockquote {
 }
 
 .content-story-section-header {
-  font-size: 2rem;
+  font-size: 2.4rem;
   margin-top: 1rem;
   color: $colorSecondary12sa;
 }
 
 .content-panel {
-  font-size: 1.4rem;
-  font-family: 'Oswald', sans-serif;
-  line-height: 1.65;
-  letter-spacing: 0.04em;
+  font-size: 1.7rem;
+  //font-family: 'Playfair Display', serif;
+  //font-family: 'Oswald', sans-serif;
+  font-family: 'Teko', sans-serif;
+  line-height: 1.45;
+  letter-spacing: 0.02em;
 }
 
 .blog-item-header {
