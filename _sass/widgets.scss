@@ -21,14 +21,20 @@
 
 .demo-button h1 {
   color: $colorSecondary15a;
-  font-size: 35px;
+  font-size: 3rem;
   font-weight: 900;
+  margin: 0;
+  padding: 0;
+  line-height: 1;
 }
 
 .demo-button p {
   color: #FFFFFF;
   font-size: 1.25rem;
   font-weight: 700;
+  margin: 0;
+  padding: 0;
+  line-height: 1;
 }
 
 #forkme_banner {
