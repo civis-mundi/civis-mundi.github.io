@@ -4,8 +4,21 @@
 @import './color';
 
 @media screen and (max-width: 960px) {
+
   img {
     max-width: 100%;
+  }
+
+  .logo {
+    display: none;
+  }
+
+  .content-illustration p img {
+    max-width: 21rem;
+  }
+
+  .content-illustration p img {
+    max-width: 20rem;
   }
 
   #main_content {
@@ -20,12 +33,28 @@
     margin-top: 2.5rem;
   }
 
+  .blog-item-header {
+    margin-top: 0 !important;
+  }
+
   .content-panel {
     max-width: 70%;
+    margin-top: 0;
+    margin-bottom: 0 !important;
+  }
+
+  .content-panel-lesser {
+    margin-top: 0;
+    margin-bottom: 0;
   }
 
   .content-item-label {
     top: 0;
     right: 0;
+  }
+
+  .demo-button {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
   }
 }
