@@ -1,5 +1,6 @@
 // https://developer.mozilla.org/en-US/docs/Web/HTML/Element/nav
 // https://www.w3schools.com/css/css_navbar.asp
+@import './color';
 
 nav {
 
@@ -11,7 +12,8 @@ nav {
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: #173A37;
+  position: relative;
+  z-index: 1;
   /* stay at top during scroll */
   //position: fixed;
   //top: 0;
@@ -26,18 +28,13 @@ nav {
 
 .nav_item a {
   display: block;
-  color: #84A5A1;
+  color: $colorPrimary2;
   text-align: center;
   padding: 10px 12px;
   text-decoration: none;
 }
 
 .nav_item a:hover {
-  background-color: #294845;
+  background-color: $colorPrimaryBackground1;
   text-decoration: none;
-}
-
-@media screen and (max-width: 600px) {
-  ul.nav_list li.right,
-  ul.nav_list li {float: none;}
 }

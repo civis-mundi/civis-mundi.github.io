@@ -1,0 +1,42 @@
+@import './color';
+
+ul, ol, dl {
+  margin-bottom: 15px
+}
+
+ul {
+  list-style-position: inside;
+  list-style: square;
+  padding-left: 20px;
+}
+
+ol {
+  list-style-position: inside;
+  list-style: decimal;
+  padding-left: 20px;
+}
+
+dl dt {
+  font-weight: bold;
+}
+
+dl dd {
+  padding-left: 20px;
+  font-style: italic;
+}
+
+dl p {
+  padding-left: 20px;
+  font-style: italic;
+}
+
+.blog-list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.footer-list {
+  //columns: 2;
+  list-style: none;
+  padding-left: 0;
+}

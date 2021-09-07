@@ -1,0 +1,10 @@
+/*
+ * Container elements for small devices.
+ */
+@import './color';
+
+@media screen and (max-width: 1400px) {
+  .inner {
+    max-width: 90%;
+  }
+}

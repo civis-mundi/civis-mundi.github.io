@@ -1,33 +1,33 @@
-/* https://www.w3schools.com/cssref/css_websafe_fonts.asp */
-/* https://developer.mozilla.org/en-US/docs/Web/CSS/font-family */
-/* *https://www.w3.org/Style/Examples/007/fonts.en.html */
+@import './color';
+
 body {
   box-sizing: border-box;
-  color:#FFFFFF;
-  background: #173A37;
-  font-size: 16px;
-  font-family: 'Myriad Pro', Calibri, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
+  color: $colorPrimary2a;
+  background: $colorPrimaryBoxBackground1;
+  font-size: 1rem;
+  font-family: 'IBM Plex Sans Arabic', sans-serif;
+  line-height: 1.75;
   -webkit-font-smoothing: antialiased;
 }
 
 h1, h2, h3, h4, h5, h6 {
-  margin: 10px 0;
+  margin: 1rem 0 0.5rem 0;
   font-weight: 700;
-  color:#D1E1DF;
-  font-family: 'Lucida Grande', 'Calibri', Helvetica, Arial, sans-serif;
-  letter-spacing: -1px;
+  color: $colorPrimary2a;
+  //font-family: 'Montserrat', sans-serif;
+  font-family: 'Teko', sans-serif;
+  letter-spacing: 0.05em;
 }
 
 h1 {
-  font-size: 30px;
+  font-size: 38px;
   font-weight: 700;
+  color: $colorSecondary12sa;
 }
 
 h2 {
-  padding-bottom: 10px;
-  font-size: 26px;
-  //background: url('../images/bg_hr.png') repeat-x bottom;
+  //padding-bottom: 10px;
+  font-size: 30px;
 }
 
 h3 {
@@ -72,12 +72,12 @@ div {
 }
 
 footer p {
-  color: #D1E1DF;
+  color: $colorPrimary2a;
 }
 
 a {
   text-decoration: none;
-  color: #84A5A1;
+  color: $colorSecondary22;
   text-shadow: none;
 
   transition: color 0.5s ease;
@@ -123,14 +123,14 @@ pre, code {
 
 pre {
   padding: 10px;
-  box-shadow: 0 0 10px rgba(0,0,0,.1);
+  box-shadow: 0 0 10px rgba(0, 0, 0, .1);
   overflow: auto;
 }
 
 code {
   padding: 3px;
   margin: 0 3px;
-  box-shadow: 0 0 10px rgba(0,0,0,.1);
+  box-shadow: 0 0 10px rgba(0, 0, 0, .1);
 }
 
 pre code {
@@ -145,33 +145,59 @@ blockquote {
   border-left: 3px solid #bbb;
 }
 
-
-ul, ol, dl {
-  margin-bottom: 15px
+#project_title {
+  margin: 2rem 0rem 0rem 0rem;
+  color: #FFFFFF;
+  font-size: 4.4rem;
+  font-weight: 800;
+  text-shadow: $colorSecondaryBackground1 0px 0px 10px;
+  line-height: 1;
 }
 
-ul {
-  list-style-position: inside;
-  list-style: disc;
-  padding-left: 20px;
+#project_tagline {
+  color: $colorSecondary22;
+  font-size: 1.5rem;
+  font-weight: 300;
+  background: none;
+  text-shadow: $colorSecondaryBackground1 0 0 0.6rem;
+  //max-width: 35rem;
+  line-height: 1;
+  margin: 0;
 }
 
-ol {
-  list-style-position: inside;
-  list-style: decimal;
-  padding-left: 20px;
+.content-item-label {
+  position: relative;
+  top: 1.5rem;
+  right: 2rem;
+  z-index: 2;
 }
 
-dl dt {
-  font-weight: bold;
+.content-item-label h2 {
+  padding-bottom: 0;
+  font-size: 2rem;
 }
 
-dl dd {
-  padding-left: 20px;
-  font-style: italic;
+.content-story-section {
+  font-size: 1.1rem;
 }
 
-dl p {
-  padding-left: 20px;
-  font-style: italic;
+.content-story-section-header {
+  font-size: 2.4rem;
+  margin-top: 1rem;
+  color: $colorSecondary12sa;
+}
+
+.content-panel {
+  font-size: 1.7rem;
+  //font-family: 'Playfair Display', serif;
+  //font-family: 'Oswald', sans-serif;
+  font-family: 'Teko', sans-serif;
+  line-height: 1.45;
+  letter-spacing: 0.02em;
+}
+
+.blog-item-header {
+  //font-size: 2rem;
+  margin-top: 4rem;
+  //color: $colorSecondary12sa;
 }

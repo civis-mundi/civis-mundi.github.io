@@ -2,29 +2,107 @@
 layout: default
 ---
 
-<h1>Our Product</h1>
+<!-- HEADER -->
+<div id="header_wrap" class="outer">
+    <header class="inner">
+        <h1 id="project_title">{{ site.title | default: site.github.repository_name }}</h1>
+        <h2 id="project_tagline">{{ site.description | default: site.github.project_tagline }}</h2>
+    </header>
+    <img class="logo" src="assets/images/noun-project/Noun_project_1026_flipped_bluegreen-02s.png">
+</div>
 
-<H2>Why?</H2>
-<p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
-aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-</p>
+<div class="content-panel">
+    <p>
+        More than 1 million immigrants arrive in the U.S. each year.
+        <!-- https://www.pewresearch.org/fact-tank/2020/08/20/key-findings-about-u-s-immigrants/ -->
+    </p>
+    <p>
+        Without domestic credit history, a recent immigrant is not allowed access to domestic credit products.
+        <!-- https://www.forbes.com/sites/advisor/2019/10/25/new-amex-deal-with-nova-credit-will-help-immigrants-get-us-credit-cards/?sh=5c8078e82c8b -->
+        <!-- https://www.americanexpress.com/en-us/credit-cards/credit-intel/how-long-does-it-take-to-establish-credit/ -->
+        <!-- https://citizenpath.com/credit-building-immigrants-with-no-credit/ -->
+        <!-- I removed "wait" because they actually have to do something to generate records ("work"). -->
+        <!-- I removed "months" because that doesn't sound so painful. -->
+        <!-- I added "from scratch" because that IS unfair. -->
+        They are expected to start over --
+        <i>even</i> when they might have a perfectly good financial history abroad.
+    </p>
+    <p>
+        Let's tear down that wall.
+    </p>
+</div>
 
-<H2>What?</H2>
-<p>
-  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
-  aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-  Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-  occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-</p>
+<div class="content-story-section">
+    <p>
+        Now, given that introduction, you may be asking, "What wall?"
+    </p>
+    <p>
+        For various reasons (historical, jurisdictional, and technological),
+        the credit rating systems in each country are isolated and separate.
+        This seems counter-intuitive in the age of global finance,
+        but where corporate finance has a long history of cross-pollination,
+        personal finance does not.
+        It's taken nothing less than the advent
+        of the internet to finally make this omission grossly obvious.
+    </p>
+</div>
+<h1 class="content-story-section-header">Open Banking</h1>
+<div class="content-story-section">
+    <p>
+        It's surely time to fix this problem, and thankfully the world community is developing
+        the tools to do so. In the EU, the European Commission created the Revised Payment Services Directive (PSD2)
+        to exert pressure on financial institutions to provide consumers not only additional protections and rights,
+        but also enhanced ownership and transparency into their own financial data.
+    </p>
+    <p>
+        This in turn spurred the development of the Open Banking initiative to provide the requisite
+        transparency by encouraging the creation of open technology tools, particularly APIs.
+        Both PSD2 and Open Banking were designed to create new opportunities
+        for innovation in financial technologies and services --
+        and this is indeed the opportunity upon which we are building.
+    </p>
+</div>
+<h1 class="content-story-section-header">Our Product</h1>
+<div class="content-story-section">
+    <p>
+        The Open Banking initiative has seen the advent of Account Information Service Providers (AISP).
+        The goal of the AISPs is to provide uniform open banking APIs for the majority of financial institutions
+        in a certain region. By leveraging these service providers to perform the first step of integration and normalization,
+        we don't need to make a unique connection to every bank in the world.
+    </p>
+</div>
+<div class="content-illustration">
+    <p>
+    <img src="assets/images/civis-mundi-01.png">
+    </p>
+</div>
+<div class="content-story-section">
+    <p>
+        On the other hand, there are a few significant caveats regarding these AISPs.
+        First, they do not agree themselves on any common data schema.
+        Any integration to one of these providers is unique.
+        Second, it is not their purpose to provide value-added features.
+        Their purpose is to provide account information.
+        It is our job to do something interesting and useful with it.
+    </p>
+    <p>
+        With this in mind, we hope you'll be interested to learn more about our <a href = "/pages/product.html">product</a>.
+    </p>
+</div>
 
-<H2>How?</H2>
-<p>
-  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
-  aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-  Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-  occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-</p>
 
+<div class="content-panel-lesser">
+    <h2>Interested? Let's chat!</h2>
+    <p>
+        Contact us at <a href="mailto:ifinn@civizmundi.com">ifinn@civizmundi.com</a>.
+    </p>
+</div>
+
+<div class="demo-button">
+    <h1>
+        <a href="pages/demo.html">DEMO</a>
+    </h1>
+    <p>
+        Autumn 2021. Please check back!
+    </p>
+</div>

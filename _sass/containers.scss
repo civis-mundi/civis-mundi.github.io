@@ -1,0 +1,138 @@
+@import './color';
+
+/*
+ * A class applied to header_wrap, footer_wrap, and main_content_wrap.
+ */
+.outer {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+}
+
+/*
+ * A class applied to header, footer, and section.
+ */
+.inner {
+  position: relative;
+  // This gives the page its centered columnar look.
+  max-width: 60%;
+  //padding: 1.5rem 0.6rem;
+  margin: 0 auto;
+}
+
+#header_wrap {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+#header_wrap .inner {
+  //margin-top: 1rem;
+  //margin-bottom: 3rem;
+  //padding: 1rem 0.6rem 1rem 0.6rem;
+  float: left;
+}
+
+/*
+ * This used to wrap all page content except the footer,
+ * so that the footer can be shoved all the way to the bottom
+ * of each page and will always stick there.
+ */
+#page-container {
+  position: relative;
+  min-height: 100vh;
+}
+
+#main_content_wrap {
+  // This padding-bottom must match the footer height.
+  // This is part of the trick that sticks the footer to the bottom.
+  padding-bottom: 10rem; /* Footer height */
+}
+
+#main_content {
+  display: flex;
+  flex-direction: column;
+  //padding-top: 2.5rem;
+  //margin-top: 2.5rem;
+}
+
+#footer_wrap {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 10rem; /* Footer height */
+  z-index: 2;
+  background: $colorSecondaryFooterBackground1;
+}
+
+/*
+ * A raised box panel used to emphasize a small amount of text,
+ * such as a call-to-action or a quote.
+ */
+.content-panel {
+  position: relative;
+  background-color: $colorPrimaryBoxBackground1;
+  border-radius: 0.25rem;
+  box-shadow: 0 2px 30px $colorPrimaryBoxBackground1;
+  display: block;
+  padding: 1.5rem;
+  margin-top: 2rem;
+  margin-bottom: 3rem;
+  max-width: 70%;
+  position: relative;
+  z-index: 1;
+  font-size: 1.55rem;
+}
+
+/*
+ * A raised box panel used to emphasize a small amount of text,
+ * such as a call-to-action or a quote.
+ */
+.content-panel-lesser {
+  position: relative;
+  background-color: $colorPrimaryBoxBackground1;
+  border-radius: 0.25rem;
+  box-shadow: 0 2px 30px $colorPrimaryBoxBackground1;
+  display: block;
+  padding: 1.5rem;
+  margin-top: 2rem;
+  margin-bottom: 3rem;
+  max-width: 70%;
+  position: relative;
+  z-index: 1;
+}
+
+/*
+ * Applied to a div where class is background-wrapper.
+ */
+.background_wrapper {
+  background: linear-gradient($colorPrimaryBackground1, $colorSecondaryBackground1);
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+}
+
+/*
+ * Applied to a div where class is background-wrapper.
+ */
+.background_wrapper::after {
+  position: absolute;
+  content: '';
+  left: 50%;
+  height: 100vh;
+  width: 61rem;
+  background-color: #00000013;
+  // Skew the div, making a sash shape.
+  transform: skew(30deg, 0) translateX(-85%);
+  // Send the div into the background.
+  z-index: -1;
+}
+
+/*
+ * Use on a div to enforce minimum space when nothing else helps.
+ */
+.empty-space {
+  margin-top: 4rem;
+}

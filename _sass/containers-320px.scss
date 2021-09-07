@@ -1,0 +1,16 @@
+/*
+ * Container elements for small devices.
+ */
+@import './color';
+
+@media screen and (max-width: 320px) {
+
+  #downloads {
+    display: none;
+  }
+
+  .inner {
+    min-width: 240px;
+    max-width: 320px;
+  }
+}

@@ -1,0 +1,43 @@
+/*
+ * Typography for small devices.
+ */
+@import './color';
+
+@media screen and (max-width: 500px) {
+
+  body {
+    font-size: 14px;
+  }
+
+  h1 {
+    font-size: 28px;
+  }
+
+  h2 {
+    font-size: 24px;
+  }
+
+  h3 {
+    font-size: 21px;
+  }
+
+  h4 {
+    font-size: 18px;
+  }
+
+  h5 {
+    font-size: 14px;
+  }
+
+  h6 {
+    font-size: 12px;
+  }
+
+  code, pre {
+    font-size: 11px;
+  }
+
+  #project_title {
+    font-size: 32px;
+  }
+}
