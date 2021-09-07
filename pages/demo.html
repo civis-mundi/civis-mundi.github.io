@@ -27,6 +27,32 @@ Since the demo isn't ready yet, our choice was this or nothing.
 Work is in progress and we hope you'll check back.
 Our goal remains Autumn 2021.
 
+<h1>Architecture</h1>
+
+<p>
+In a nutshell:
+</p>
+<ul>
+    <li>Most Account Information Service Providers have REST (not GraphQL) APIs.
+        We convert their output to flow through our systems as schema-based GraphQL JSON.</li>
+    <li>Flow modules (a flavor of microservices) collaborate in the backend to perform integration, normalization, aggregation, and analysis tasks.
+    These modules are managed by Spring Cloud Data Flow, itself running on Kubernetes in the Google Cloud.
+    </li>
+    <li>We use the Netflix Domain Graph Service (DGS) to expose backend data to the frontend user interface,
+    where the Apollo client is used in place of e.g. Redux to serve data into React components.
+    Capacitor is used to create a mobile client.</li>
+</ul>
+
+
+<div class="content-illustration">
+    <p>
+        <img src="../assets/images/product-architecture-01.png">
+    </p>
+    <p style="text-align: center;">
+        Work-in-progress architecture as-built Sep 2021.
+    </p>
+</div>
+
 <h1>Data</h1>
 <p>
     Unless or until stated otherwise, all data used in demonstrations, screenshots, etc. is
