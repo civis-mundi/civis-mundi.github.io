@@ -11,15 +11,85 @@ title: Projects
     <img class="logo" src="../assets/images/noun-project/Noun_project_1026_flipped_bluegreen-02s.png">
 </div>
 
-<div class="content-panel">
+<h1 class="content-story-section-header">Foreign Credit and Open Banking</h1>
+
+<h2>What did we set out to do?</h2>
+<div class="content-story-section">
     <p>
-        Lorem ipsum.
+        We set out to discover the reasons why personal foreign credit history is not portable --
+        and then to see if we could do something to help provide a solution to the problem.
+        Our hypothesis has been that it might be a problem of data access.
+        We are partly correct.
     </p>
 </div>
 
+<h2>What have we accomplished?</h2>
+<div class="content-story-section">
+    <ul>
+        <li>We gathered and documented a good deal of market research.</li>
+        <li>We made useful contacts in the industry (at both lenders and AISPs)
+            and engaged in discovery interviews.
+        </li>
+        <li>We created Kotlin Spring Boot starter libraries for integrating
+            with key Account Information Service Providers,
+            such as Plaid and Tink.
+        </li>
+        <li>We navigated the authentication and consent idiosyncrasies of each AISP.</li>
+        <li>We studied and normalized the various non-standardized AISP schemas into our own canonical
+            (incl. accounts, institutions, transactions, payment history, etc.).
+        </li>
+        <li>We provided a GraphQL API to our integration and normalization layer.</li>
+        <li>We created a React Material-UI frontend in which to present normalized data.</li>
+    </ul>
+</div>
+
+<h2>What have we learned?</h2>
 <div class="content-story-section">
     <p>
-        Lorem ipsum.
+        The promise of seamless integration (under the banner of "Open Banking")
+        is a project that is not accomplished yet, but it is something that many industry participants,
+        both big and small, are scrambling to address now.
+        It's been mildly shocking to discover that the financial industry has procrastinated for so long,
+        considering the world is entering its third decade of rapid "digital transformation".
+        Hence why banks have been so easily disrupted by AISP entrants like Plaid.
+    </p>
+    <p>
+        And this points to the "whys" of the problem.
+        It basically comes down to vested interests.
+        On the one hand, the big credit bureaus have provided a sufficient clearing-house solution --
+        sufficient in the sense that to date the industry hasn't seen any need to disrupt it.
+        On the other, financial institutions assumed perpetual ownership over the data provided to them by their
+        customers -- but government intervention on behalf of consumer interests is forcing change.
+    </p>
+    <p>
+        To be sure, nobody is sitting still any longer.
+        There are many resources being thrown into realizing Open Banking -style integrations, and timetables are
+        aggressive.
+        We can expect to see significant progress during the next few years.
+    </p>
+    <p>
+        Other learnings:
+    </p>
+    <ul>
+        <li>It's no surprise that the problem of data portability is as much jurisdictional (and even geo-market driven)
+            as technical. In fact, the technical challenges are easiest to solve.
+        </li>
+        <li>From the number of credit card advertisements with which we are inundated, we all know that
+            the credit industry has a prepared path for subsuming immigrants into the domestic market.
+            It may be temporarily inconvenient and frustrating for the immigrant,
+            but in a greater statistical sense, it's a brief window.
+            Lenders are more than willing to cycle potential customers through this phase.
+            This slice of market is not only small -- it's temporary -- and there is a constant flow of fresh graduates
+            into the normalized mainstream.
+        </li>
+    </ul>
+    <p>
+        It's an interesting time. Governments (e.g. PSD2) and disruptors (e.g. Plaid)
+        have woken the financial industry from its slumber on the topics of transparency and integration.
+        As a result of these pressures, we know that both credit bureaus and banks
+        are aggressively working on solutions now, closing the doors on certain kinds of disruption.
+        Whether they apply their new facilities to the problem of foreign credit portability
+        shall be less a question of technical feasibility and more of perceived market opportunity.
     </p>
 </div>
 
